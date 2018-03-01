@@ -1,0 +1,15 @@
+##测试 email
+
+$mail.senderName message notification
+Sender       :   $mail.senderName<$mail.senderMail>
+Receiver     :   $mail.receiverName<$mail.receiverMail>
+Date         :   $mail.date
+
+Dear $mail.receiverMail:
+$mail.senderName send a message notification as following:
+
+$mail.content
+
+you have a prize waiting to take，please quick login the $mail.senderWebSite message center and have a look.
+
+$mail.senderName Team

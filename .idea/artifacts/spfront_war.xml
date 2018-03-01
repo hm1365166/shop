@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="spfront:war">
+    <output-path>$PROJECT_DIR$/spfront/target</output-path>
+    <root id="archive" name="ssmm_console.war">
+      <element id="artifact" artifact-name="spfront:war exploded" />
+    </root>
+  </artifact>
+</component>

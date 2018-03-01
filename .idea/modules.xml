@@ -3,6 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/shop.iml" filepath="$PROJECT_DIR$/shop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spautojob/spautojob.iml" filepath="$PROJECT_DIR$/spautojob/spautojob.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spconsole/spconsole.iml" filepath="$PROJECT_DIR$/spconsole/spconsole.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spfilestore/spfilestore.iml" filepath="$PROJECT_DIR$/spfilestore/spfilestore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spfront/spfront.iml" filepath="$PROJECT_DIR$/spfront/spfront.iml" />
     </modules>
   </component>
 </project>

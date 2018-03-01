@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                        http://www.springframework.org/schema/beans/spring-beans-3.1.xsd  
+                        http://www.springframework.org/schema/context  
+                        http://www.springframework.org/schema/context/spring-context-3.1.xsd
+                        http://code.alibabatech.com/schema/dubbo
+                        http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+    <!-- 自动扫描 -->
+    <context:component-scan base-package="com.shop,com.file">
+        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+        <!--<mvc:annotation-driven/>-->
+    </context:component-scan>
+
+    <!-- 引入配置文件 -->
+    <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="fileEncoding" value="utf-8"/>
+        <property name="locations">
+            <list>
+                <value>classpath*:*.properties</value>
+            </list>
+        </property>
+    </bean>
+
+    <import resource="redis-context.xml"/>
+    <import resource="spring-datasource.xml"/>
+
+    <!-- 消费方应用名，用于计算依赖关系，不是匹配条件，不要与提供方一样 -->
+    <dubbo:application name="shop_consumer"/>
+
+    <!-- 使用zookeeper注册中心暴露服务地址 -->
+    <!-- <dubbo:registry address="multicast://224.5.6.7:1234" /> -->
+    <!--<dubbo:registry address="zookeeper://172.30.0.25:2181" check="false"/>-->
+    <!-- <dubbo:registry address="zookeeper://192.168.40.128:2181" check="false"/>-->
+    <dubbo:registry address="zookeeper://127.0.0.1:2181" check="false"/>
+    <!-- 生成远程服务代理 -->
+    <dubbo:reference id="User_Rpc" interface="com.shop.service.user.UserService" check="false"/>
+
+    <dubbo:reference id="UploadFileService" interface="com.file.service.UploadFileService" check="false"/>
+
+    <dubbo:reference id="MyFileService" interface="com.file.service.MyFileService" check="false"/>
+
+    <dubbo:reference id="DownloadFileService" interface="com.file.service.DownloadFileService" check="false"/>
+</beans>

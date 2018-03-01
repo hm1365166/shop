@@ -1,0 +1,290 @@
+<html>
+
+<head>
+    <meta http-equiv=Content-Type content="text/html; charset=utf-8">
+    <meta name=Generator content="Microsoft Word 15 (filtered)">
+    <style>
+        /* Font Definitions */
+        @font-face {
+            font-family: Wingdings;
+            panose-1: 5 0 0 0 0 0 0 0 0 0;
+        }
+
+        @font-face {
+            font-family: 宋体;
+            panose-1: 2 1 6 0 3 1 1 1 1 1;
+        }
+
+        @font-face {
+            font-family: "Cambria Math";
+            panose-1: 2 4 5 3 5 4 6 3 2 4;
+        }
+
+        @font-face {
+            font-family: Calibri;
+            panose-1: 2 15 5 2 2 2 4 3 2 4;
+        }
+
+        @font-face {
+            font-family: 微软雅黑;
+            panose-1: 2 11 5 3 2 2 4 2 2 4;
+        }
+
+        @font-face {
+            font-family: "\@微软雅黑";
+            panose-1: 2 11 5 3 2 2 4 2 2 4;
+        }
+
+        @font-face {
+            font-family: "\@宋体";
+            panose-1: 2 1 6 0 3 1 1 1 1 1;
+        }
+
+        /* Style Definitions */
+        p.MsoNormal, li.MsoNormal, div.MsoNormal {
+            margin: 0cm;
+            margin-bottom: .0001pt;
+            text-align: justify;
+            text-justify: inter-ideograph;
+            font-size: 10.5pt;
+            font-family: "Calibri", sans-serif;
+        }
+
+        p.MsoHeader, li.MsoHeader, div.MsoHeader {
+            mso-style-link: "页眉 Char";
+            margin: 0cm;
+            margin-bottom: .0001pt;
+            text-align: center;
+            layout-grid-mode: char;
+            border: none;
+            padding: 0cm;
+            font-size: 9.0pt;
+            font-family: "Calibri", sans-serif;
+        }
+
+        p.MsoFooter, li.MsoFooter, div.MsoFooter {
+            mso-style-link: "页脚 Char";
+            margin: 0cm;
+            margin-bottom: .0001pt;
+            layout-grid-mode: char;
+            font-size: 9.0pt;
+            font-family: "Calibri", sans-serif;
+        }
+
+        p.MsoListBullet, li.MsoListBullet, div.MsoListBullet {
+            margin-top: 0cm;
+            margin-right: 0cm;
+            margin-bottom: 0cm;
+            margin-left: 18.0pt;
+            margin-bottom: .0001pt;
+            text-align: justify;
+            text-justify: inter-ideograph;
+            text-indent: -18.0pt;
+            font-size: 10.5pt;
+            font-family: "Calibri", sans-serif;
+        }
+
+        p.MsoListBulletCxSpFirst, li.MsoListBulletCxSpFirst, div.MsoListBulletCxSpFirst {
+            margin-top: 0cm;
+            margin-right: 0cm;
+            margin-bottom: 0cm;
+            margin-left: 18.0pt;
+            margin-bottom: .0001pt;
+            text-align: justify;
+            text-justify: inter-ideograph;
+            text-indent: -18.0pt;
+            font-size: 10.5pt;
+            font-family: "Calibri", sans-serif;
+        }
+
+        p.MsoListBulletCxSpMiddle, li.MsoListBulletCxSpMiddle, div.MsoListBulletCxSpMiddle {
+            margin-top: 0cm;
+            margin-right: 0cm;
+            margin-bottom: 0cm;
+            margin-left: 18.0pt;
+            margin-bottom: .0001pt;
+            text-align: justify;
+            text-justify: inter-ideograph;
+            text-indent: -18.0pt;
+            font-size: 10.5pt;
+            font-family: "Calibri", sans-serif;
+        }
+
+        p.MsoListBulletCxSpLast, li.MsoListBulletCxSpLast, div.MsoListBulletCxSpLast {
+            margin-top: 0cm;
+            margin-right: 0cm;
+            margin-bottom: 0cm;
+            margin-left: 18.0pt;
+            margin-bottom: .0001pt;
+            text-align: justify;
+            text-justify: inter-ideograph;
+            text-indent: -18.0pt;
+            font-size: 10.5pt;
+            font-family: "Calibri", sans-serif;
+        }
+
+        a:link, span.MsoHyperlink {
+            color: #0563C1;
+            text-decoration: underline;
+        }
+
+        a:visited, span.MsoHyperlinkFollowed {
+            color: #954F72;
+            text-decoration: underline;
+        }
+
+        span.Char {
+            mso-style-name: "页眉 Char";
+            mso-style-link: 页眉;
+        }
+
+        span.Char0 {
+            mso-style-name: "页脚 Char";
+            mso-style-link: 页脚;
+        }
+
+        .MsoChpDefault {
+            font-family: "Calibri", sans-serif;
+        }
+
+        /* Page Definitions */
+        @page WordSection1 {
+            size: 595.3pt 841.9pt;
+            margin: 72.0pt 90.0pt 72.0pt 90.0pt;
+            layout-grid: 15.6pt;
+        }
+
+        div.WordSection1 {
+            page: WordSection1;
+        }
+
+        ol {
+            margin-bottom: 0cm;
+        }
+
+        ul {
+            margin-bottom: 0cm;
+        }
+    </style>
+
+</head>
+
+<body lang=ZH-CN link="#0563C1" vlink="#954F72" style='text-justify-trim:punctuation'>
+
+<div class=WordSection1 style='layout-grid:15.6pt'>
+
+    <p class=MsoNormal><span style='font-family:"微软雅黑",sans-serif'>尊敬的 </span><b><span
+            style='font-family:"微软雅黑",sans-serif'>$mail.receiverName</span></b><span lang=EN-US
+                                                                                 style='font-family:"微软雅黑",sans-serif'> </span><span
+            style='font-family:"微软雅黑",sans-serif'>先生<span
+            lang=EN-US>/</span>女士，您好！</span></p><br/>
+
+    <p class=MsoNormal style='text-indent:21.0pt'><span style='font-family:"微软雅黑",sans-serif'>现送你一张大保健五折优惠券
+</span><b><u><span
+            lang=EN-US style='font-family:"微软雅黑",sans-serif'> </span></u></b><span
+            style='font-family:"微软雅黑",sans-serif'>详情请参考 www.4399.com：</span>
+            <b><u><span
+                style='font-family:"微软雅黑",sans-serif'>$mail.date</span></u></b></p><br/>
+#*
+    <p class=MsoNormal style='text-indent:21.0pt;line-height:150%'><b><span
+            style='font-family:"微软雅黑",sans-serif'>面试时间：</span></b><b><span
+            lang=EN-US style='font-family:"微软雅黑",sans-serif;color:red'>${ms_time_str}</span></b></p>
+    <br/>
+
+    <p class=MsoNormal style='text-indent:21.0pt;line-height:150%'><b><span
+            style='font-family:"微软雅黑",sans-serif'>面试方式：</span></b><b><span
+            lang=EN-US style='font-family:"微软雅黑",sans-serif;color:red'>QQ远程面试</span></b></p>
+    <br/>
+
+    <p class=MsoNormal style='text-indent:21.0pt'><b><span style='font-family:"微软雅黑",sans-serif'>联系人</span></b><span
+            style='font-family:宋体'>：</span><span style='font-family:"微软雅黑",sans-serif'>${hr}  <span
+            lang=EN-US>${hr_mobile} </span></span></p>
+    <br/>
+    <p class=MsoNormal><span lang=EN-US
+                             style='font-family:"微软雅黑",sans-serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><b><span
+            style='font-family:"微软雅黑",sans-serif'>岗位介绍：</span></b><span style='font-family:
+"微软雅黑",sans-serif'><a href="${post_link}">${post_link}</a></span></p>
+    <br/>
+    <p class=MsoNormal style='text-indent:21.0pt'><b><span style='font-family:"微软雅黑",sans-serif'>官网：</span></b><span
+            lang=EN-US><a href="https://www.yyfaxgroup.com/"><span
+            style='font-family:"微软雅黑",sans-serif'>https://www.yyfaxgroup.com/</span></a></span></p>
+    <br/>
+    <p class=MsoNormal style='text-indent:21.0pt'><b><span style='font-family:"微软雅黑",sans-serif'>宣传片</span></b><span
+            style='font-family:"微软雅黑",sans-serif'>：</span><span lang=EN-US><a
+            href="https://v.qq.com/x/page/g0339b3puct.html"><span style='font-family:"微软雅黑",sans-serif'>https://v.qq.com/x/page/g0339b3puct.html</span></a></span>
+    </p>
+    <br/>
+
+    <p class=MsoNormal style='text-indent:21.0pt'><span
+            style='font-family:"微软雅黑",sans-serif'>感谢您关注友金所，为节省您的面试时间，来公司前请您<b>扫描填写此面试登记表</b>，感谢您的配合。</span></p><br>
+
+    <p class=MsoNormal align=center style='text-align:center;text-indent:21.0pt'><span
+            lang=EN-US style='font-family:"微软雅黑",sans-serif'>
+        <img border=0 width=203 height=202 src="${code_path}/api/resources/QRCode.png"></span>
+    </p>
+
+    <p class=MsoNormal style='line-height:150%'><span lang=EN-US style='font-family:
+"微软雅黑",sans-serif'>&nbsp;</span></p>
+
+    <p class=MsoNormal align=center style='text-align:center'><b><span
+            style='font-family:"微软雅黑",sans-serif'>公司介绍</span></b></p><br>
+
+    <p class=MsoNormal align=left style='text-align:left;text-indent:21.0pt;
+line-height:19.5pt;background:white'><span style='font-family:"微软雅黑",sans-serif'>友金所是深圳前海用友力合金融服务有限公司（简称“友金控股”）全资子公司深圳友金所金融服务有限公司运营的互联网财富管理平台，友金控股由用友网络（股票代码：<span
+            lang=EN-US>600588</span>）、深圳力合金控与银行专家管理团队联合设立。友金所致力于提供专业的全流程金融信息服务，打造安全、便捷、可信的互联网财富管理平台，为投资客户提供安全、稳健的互联网财富管理服务。</span>
+    </p><br>
+
+    <p class=MsoNormal align=left style='text-align:left;text-indent:21.0pt;
+line-height:19.5pt;background:white'><span style='font-family:"微软雅黑",sans-serif'>友金所于<span
+            lang=EN-US>2014</span>年<span lang=EN-US>10</span>月上线，背倚用友集团、力合金控的品牌资源、客户渠道、技术支持、管理经验等，依托专业银行专家管理团队，运用互联网高效、透明、便捷优势，推出“<span
+            lang=EN-US>YY</span>计划”等低投资门槛的财富管理方案，满足广大个人用户的财富管理需求。</span></p>
+
+    <p class=MsoNormal align=left style='text-align:left;line-height:19.5pt;
+background:white'><span style='font-family:"微软雅黑",sans-serif'>友金所重要股东之一用友集团已进入以企业互联网服务为核心业务——软件<span
+            lang=EN-US>+</span>云服务<span lang=EN-US>+</span>互联网金融的<span lang=EN-US>3.0</span>发展战略时期，帮助中国企业应对互联网挑战，完成企业互联网转型。且将互联网金融服务业务作为用友集团核心业务之一，从战略体系、资源、实施方案等方面不断加大资源力度支持友金所的持续发展。<br><span
+            lang=EN-US><br>
+    </span>友金所另一重要股东力合金控是深圳清华大学研究院科技金融产业的综合平台，拥有专业的金融管理团队和科技专家团队，以服务中小微科技企业的融资和投资为主线。其中，力合金控董事长、友金控股董事陈玉明先生拥有<span
+            lang=EN-US>30</span>年银行、证券、基金管理、审计工作经验及丰富金融企业管理经验。</span></p><br>
+
+    <p class=MsoNormal align=left style='text-align:left;text-indent:21.0pt;
+line-height:19.5pt;background:white'><span style='font-family:"微软雅黑",sans-serif'>公司愿景：创建国内领先的安全、便捷、可信的投融资服务平台，成为中国最具影响力的互联网金融服务公司之一。<br><span
+            lang=EN-US><br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</span>运营理念：专业创造价值、做客户信赖的长期合作伙伴、践行普惠金融。<br><span
+            lang=EN-US><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>企业文化：专业、专注、共享、快！<br><span lang=EN-US><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>每一天，我们都在创造业绩奇迹，公司以<span lang=EN-US>100%</span>的发展速度，即将成为市场上的领先者！<br><span
+            lang=EN-US><br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</span>每一天，我们都在创造成长奇迹，员工以<span lang=EN-US>200%</span>的学习速度，成为市场上的绝对精英！<br><span
+            lang=EN-US><br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</span>你，准备好了吗！<br></span></p><br>
+
+    <p class=MsoNormal style='text-indent:21.0pt'><span style='font-family:"微软雅黑",sans-serif'>加入我们，将奇迹进行到底<span
+            lang=EN-US>!</span></span></p><br>
+
+    <p class=MsoNormal style='margin-left:21.0pt'><span lang=EN-US
+                                                        style='font-family:"微软雅黑",sans-serif'>&nbsp;&nbsp;&nbsp;&nbsp;<br>
+</span><b><span style='font-family:"微软雅黑",sans-serif'>员工福利：<br></span></b><span
+            lang=EN-US style='font-family:"微软雅黑",sans-serif'><br>
+
+1</span><span style='font-family:"微软雅黑",sans-serif'>、五险一金：每月<span
+            lang=EN-US>15</span>日前入职的员工当月起即按归属地政策为员工购买五险一金。<br><span
+            lang=EN-US><br>
+2</span>、带薪假期：享受法定节假日、婚假、丧假、产假、年休假、病假及其他国家规定的带薪假期。<br><span lang=EN-US><br>
+3</span>、职业发展：公司快速发展，为员工提供广阔的职业发展平台和可持续发展的事业。<br><span lang=EN-US><br>
+4</span>、补充福利：公司为体现对员工的人文关怀，依据年度人员费用预算，建立并提供补充福利项目，努力构建幸福企业。其中包括：<br><span
+            lang=EN-US><br>
+</span>风险保障类：为所有员工购买人身意外保险；<br><span lang=EN-US><br>
+</span>员工关怀类：节日礼金或礼物、生日关怀、员工集体活动、家庭关怀、特殊员工慰问、员工运动会、员工拓展活动、员工文艺活动等。<br><span
+            lang=EN-US><br>
+5</span>、五天八小时工作制。<br></span></p>
+*#
+
+    <p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+    <p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>

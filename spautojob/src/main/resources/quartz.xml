@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <!-- 自定义JobFactory在配置调度工厂的时候传入，用来实现Job中可以使用spring注入的bean -->
+    <bean id="jobFactory" class="job.JobFactory"/>
+<!--    &lt;!&ndash; 定时去扫描广告表 &ndash;&gt;
+    <bean id="adJob" class="org.springframework.scheduling.quartz.JobDetailFactoryBean">
+        <property name="jobClass" value="com.shop.job.JobManager"/>
+        <property name="durability" value="true"/>
+    </bean>
+
+    &lt;!&ndash; 调度触发器 每10秒执行一次 &ndash;&gt;
+   &lt;!&ndash; <bean id="adJobTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerFactoryBean">
+        <property name="name" value="simple_ad_trigger"/>
+        <property name="group" value="ad_group1"/>
+        <property name="jobDetail" ref="adJob"/>
+        <property name="repeatInterval" value="10000"/>
+        <property name="repeatCount" value="-1"/>
+    </bean>&ndash;&gt;
+    <bean id="adJobTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <property name="name" value="simple_ad_trigger"/>
+        <property name="group" value="ad_group1"/>
+        <property name="jobDetail" ref="adJob"/>
+        <property name="cronExpression" value="0/10 * * * * *"/>
+    </bean>
+
+    &lt;!&ndash; ************************************************************************************************* &ndash;&gt;
+
+    &lt;!&ndash;  &ndash;&gt;
+    <bean id="adJobForFixTime" class="org.springframework.scheduling.quartz.JobDetailFactoryBean">
+        <property name="jobClass" value="com.shop.job.UpLevelJob"/>
+        <property name="durability" value="true"/>
+    </bean>
+
+    &lt;!&ndash; 调度触发器 周一到周五每天8:30执行 &ndash;&gt;
+    <bean id="adJobForFixTimeTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <property name="name" value="cron_ad_trigger"/>
+        <property name="group" value="ad_group1"/>
+        <property name="jobDetail" ref="adJobForFixTime"/>
+        <property name="cronExpression" value="0 30 8 ? * MON-FRI"/>
+    </bean>-->
+
+    <!-- ************************************************************************************************* -->
+
+    <!--  -->
+    <bean id="testJob" class="org.springframework.scheduling.quartz.JobDetailFactoryBean">
+        <property name="jobClass" value="job.JobManager"/>
+        <property name="durability" value="true"/>
+    </bean>
+
+    <!-- 调度触发器 周一到周五每天8:30执行 -->
+    <bean id="testJobForFixTimeTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <property name="name" value="cron2_ad_trigger"/>
+        <property name="group" value="ad_group1"/>
+        <property name="jobDetail" ref="testJob"/>
+        <property name="cronExpression" value="0/5 * * * * ? "/>
+    </bean>
+
+    <!-- ************************************************************************************************* -->
+    <!-- 调度工厂 -->
+    <bean id="scheduler" class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+        <property name="jobFactory" ref="jobFactory"/>
+        <property name="dataSource" ref="dataSource"/>
+        <property name="startupDelay" value="1"/>
+        <property name="autoStartup" value="true"/>
+        <property name="triggers">
+            <list>
+                <!--<ref bean="adJobForFixTimeTrigger"/>
+                <ref bean="adJobTrigger"/>-->
+                <ref bean="testJobForFixTimeTrigger"/>
+            </list>
+        </property>
+    </bean>
+
+</beans>

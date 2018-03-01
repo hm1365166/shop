@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="spconsole:war">
+    <output-path>$PROJECT_DIR$/spconsole/target</output-path>
+    <root id="archive" name="shop.war">
+      <element id="artifact" artifact-name="spconsole:war exploded" />
+    </root>
+  </artifact>
+</component>
