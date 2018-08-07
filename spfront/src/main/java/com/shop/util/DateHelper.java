@@ -87,12 +87,6 @@ public class DateHelper {
 	 *
 	 * 获取指定时间n天前的时间--Timestamp
 	 *
-	 * @param date
-	 * @param n
-	 * @return
-	 * @throws Exception
-	 * @author zp
-	 * @date 2015-11-11 10:43:21
 	 */
 	public static Timestamp LastDay(Timestamp date, int n) {
 		Calendar cal = Calendar.getInstance();
@@ -105,12 +99,6 @@ public class DateHelper {
 	 *
 	 * 获取指定时间n天前的时间--Date
 	 *
-	 * @param date
-	 * @param n
-	 * @return
-	 * @throws Exception
-	 * @author zp
-	 * @date 2015-11-11 10:45:25
 	 */
 	public static Date LastDay(Date date, int n) {
 		Calendar cal = Calendar.getInstance();
@@ -122,11 +110,6 @@ public class DateHelper {
 	/**
 	 * 获取指定时间n个月前的时间--Date
 	 *
-	 * @param date
-	 * @param n
-	 * @return
-	 * @author zp
-	 * @date 2016-08-30 15:46:00
 	 */
 	public static Date LastMonth(Date date, int n) {
 		Calendar cal = Calendar.getInstance();
@@ -138,10 +121,6 @@ public class DateHelper {
 	/**
 	 *
 	 * 获取当天日期的timestamp
-	 *
-	 * @return
-	 * @author zp
-	 * @date 2015-11-11 10:44:46
 	 */
 	public static Timestamp getToday() {
 		String time = dateFormat.format(new Date());
@@ -153,9 +132,6 @@ public class DateHelper {
 	 *
 	 * 获取当前时间的timestamp
 	 *
-	 * @return
-	 * @author zp
-	 * @date 2015-11-11 10:44:46
 	 */
 	public static Timestamp getCurrenTimestamp() {
 		String time = dateTimeFormat.format(new Date());
@@ -167,10 +143,6 @@ public class DateHelper {
 	 *
 	 * 将java.util.Date 时间转成String类型 格式：yyyy-MM-dd HH:mm:ss
 	 *
-	 * @param date
-	 * @return
-	 * @author zp
-	 * @date 2015-11-23 10:32:02
 	 */
 	public static String getTimeStr(Date date) {
 		return dateTimeFormat.format(date);
@@ -179,11 +151,6 @@ public class DateHelper {
 	/**
 	 * 将 java.util.Date 转成 指定格式 字符串
 	 *
-	 * @param date
-	 * @param formate
-	 * @return
-	 * @author zp
-	 * @date 2016-06-07 15:03:46
 	 */
 	public static String getDateStr(Date date, String formate) {
 		SimpleDateFormat dateFormat = new SimpleDateFormat(formate);
@@ -193,10 +160,6 @@ public class DateHelper {
 	/**
 	 * 将java.util.Date 时间转成String类型 的指定格式
 	 *
-	 * @param date
-	 * @return
-	 * @author liurh
-	 * @date Jun 20, 2016 11:14:09 AM
 	 */
 	public static String format(Date date, String pattern) {
 		try {
@@ -213,10 +176,6 @@ public class DateHelper {
 	/**
 	 * 将指定格式时间的String 转成java.util.Date
 	 *
-	 * @param date
-	 * @return
-	 * @author liurh
-	 * @date Jun 20, 2016 11:14:09 AM
 	 */
 	public static Date parse(String str, String pattern) {
 		try {
@@ -234,10 +193,6 @@ public class DateHelper {
 	 *
 	 * 获取指定时间的当天最大的时间，例如 "2015-12-15 12:00:00"-"2015-12-15 23:59:59"
 	 *
-	 * @param cld
-	 * @return
-	 * @author zp
-	 * @date 2015-12-15 11:03:02
 	 */
 	public static Calendar getMaxTime(Calendar cld) {
 		if (null == cld) {
@@ -255,10 +210,6 @@ public class DateHelper {
 	 *
 	 * 获取指定时间的当天最大的时间，例如 "2015-12-15 12:00:00"-"2015-12-15 23:59:59"
 	 *
-	 * @param Timestamp
-	 * @return
-	 * @author zp
-	 * @date 2015-12-15 11:03:02
 	 */
 	public static Timestamp getMaxTime(Timestamp timestamp) {
 		if (null == timestamp) {
@@ -271,9 +222,6 @@ public class DateHelper {
 	/**
 	 *
 	 * 获取当天的最大的时间，例如 "2016-10-11 23:59:59"
-	 * @return
-	 * @author zp
-	 * @date 2016-10-11 11:57:00
 	 */
 	public static Date getMaxCurrentTime() {
 		Calendar cld = Calendar.getInstance();
@@ -288,11 +236,6 @@ public class DateHelper {
 	/**
 	 * 根据传入的时间字符串生成对应的Timestamp对象
 	 *
-	 * @param dateString
-	 * @return
-	 * @throws Throwable
-	 * @author heizhiqiang
-	 * @date 2015-12-17 18:34:29
 	 */
 	public static Timestamp getTimestampByString(String dateString) throws Exception {
 		return new Timestamp(dateTimeFormat.parse(dateString).getTime());
@@ -302,11 +245,6 @@ public class DateHelper {
 	 *
 	 * 根据传入的Timestamp对象生成对应的字符串（格式：yyyy-MM-dd HH:mm:ss）
 	 *
-	 * @param timestamp
-	 * @return
-	 * @throws Throwable
-	 * @author zp
-	 * @date 2016-01-06 14:00:51
 	 */
 	public static String getStringByTimestamp(Timestamp timestamp) throws Exception {
 		return dateTimeFormat.format(timestamp);
@@ -315,12 +253,6 @@ public class DateHelper {
 	/**
 	 *
 	 * 根据传入的Timestamp对象转成指定格式的字符串
-	 * @param timestamp
-	 * @param formate
-	 * @return
-	 * @throws Throwable
-	 * @author yuanbs
-	 * @date 2016-11-21 15:45:47
 	 */
 	public static String getStringByTimestamp(Timestamp timestamp, SimpleDateFormat formate) throws Exception {
 		return formate.format(timestamp);
@@ -330,11 +262,6 @@ public class DateHelper {
 	 *
 	 * 根据传入的Timestamp对象生成对应的字符串（格式：yyyy-MM-dd）
 	 *
-	 * @param timestamp
-	 * @return
-	 * @throws Throwable
-	 * @author zp
-	 * @date 2016-04-25 13:45:10
 	 */
 	public static String getStringByTimestamp2(Timestamp timestamp) throws Exception {
 		return dateFormat2.format(timestamp);
@@ -343,13 +270,6 @@ public class DateHelper {
 	/**
 	 *
 	 * 将UK时间字符串转成Date
-	 *
-	 * @param str
-	 *            UK时间字符串（例如：Wed Dec 16 21:25:04 CST 2015）
-	 * @return Date
-	 * @throws ParseException
-	 * @author zp
-	 * @date 2015-12-17 08:59:08
 	 */
 	public static Date getDateByUKStr(String str) throws ParseException {
 		return dateFormatUK.parse(str);
@@ -359,10 +279,6 @@ public class DateHelper {
 	 *
 	 * 校验时分秒字符串是否格式正确
 	 *
-	 * @param timeStr
-	 * @return
-	 * @author zp
-	 * @date 2016-03-16 15:16:10
 	 */
 	public static boolean isTimeStr(String timeStr) {
 		boolean result = false;
@@ -377,9 +293,6 @@ public class DateHelper {
 	/**
 	 * 获取系统当前时间字符串(yyyy-MM-dd)
 	 *
-	 * @return
-	 * @author zp
-	 * @date 2016-06-01 09:00:01
 	 */
 	public static String getCurrentDateStr() {
 		return dateFormat2.format(new Date());
@@ -388,9 +301,6 @@ public class DateHelper {
 	/**
 	 * 获取系统当前时间字符串(yyyy-MM-dd HH:mm:ss)
 	 *
-	 * @return
-	 * @author zp
-	 * @date 2016-06-01 09:00:31
 	 */
 	public static String getCurrentDateTimeStr() {
 		return dateTimeFormat.format(new Date());
@@ -399,9 +309,6 @@ public class DateHelper {
 	/**
 	 *
 	 * 获取系统当前时间字符串(yyyyMMddHHmmss)
-	 * @return
-	 * @author yuanbs
-	 * @date 2016-12-05 17:55:37
 	 */
 	public static String getCurrentDateTimeStr1() {
 		return dateTimeFormat3.format(new Date());
@@ -410,13 +317,6 @@ public class DateHelper {
 	/**
 	 * 给定的时候增加X分钟
 	 *
-	 * @param date
-	 *            原始时间
-	 * @param mins
-	 *            增加的X分钟
-	 * @return 增加的X分钟后的时间
-	 * @author liurh
-	 * @date Jun 17, 2016 10:24:47 AM
 	 */
 	public static Date addMins(Date date, int mins) {
 		if (null == date || mins == 0) {
@@ -435,10 +335,6 @@ public class DateHelper {
 	/**
 	 * java.util.date 转换为 java.sql.date
 	 *
-	 * @param date
-	 * @return
-	 * @author liurh
-	 * @date Jun 17, 2016 11:43:18 AM
 	 */
 	public static java.sql.Date date2sqldate(Date date) {
 		if (null == date) {
@@ -455,10 +351,6 @@ public class DateHelper {
 	/**
 	 * java.sql.date 转换为 java.util.date
 	 *
-	 * @param date
-	 * @return
-	 * @author liurh
-	 * @date Jun 17, 2016 5:40:10 PM
 	 */
 	public static Date sqldate2date(java.sql.Date date) {
 		if (null == date) {
@@ -474,10 +366,6 @@ public class DateHelper {
 
 	/**
 	 * 获取当前的自然年
-	 *
-	 * @return
-	 * @author Liurh
-	 * @date Jan 22, 2017 10:37:23 AM
 	 */
 	public static String getCurrentYearStr() {
 		Calendar cld = Calendar.getInstance();
@@ -489,9 +377,6 @@ public class DateHelper {
 	/**
 	 * 获取今年的第一天
 	 *
-	 * @return
-	 * @author Liurh
-	 * @date Jan 22, 2017 11:47:45 AM
 	 */
 	public static Timestamp getCurrentYearFirstDay() {
 		String year = getCurrentYearStr();
@@ -503,9 +388,6 @@ public class DateHelper {
 	/**
 	 * 获取昨天的那个月的第一天
 	 *
-	 * @return
-	 * @author Liurh
-	 * @date Jan 22, 2017 11:47:45 AM
 	 */
 	public static Timestamp getFirstDayOfYesterdayMonth() {
 		Calendar cld = Calendar.getInstance();

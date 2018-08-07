@@ -3,9 +3,11 @@ package com.shop.util;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Service;
+import org.springframework.web.context.support.WebApplicationContextUtils;
 
 @Service
 public class SpringHelper implements ApplicationContextAware {
@@ -13,6 +15,7 @@ public class SpringHelper implements ApplicationContextAware {
 
 	private static ApplicationContext applicationContext;
 
+	@Override
 	public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
 		SpringHelper.applicationContext = applicationContext;
 	}

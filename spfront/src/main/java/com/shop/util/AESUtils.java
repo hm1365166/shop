@@ -37,7 +37,7 @@ public class AESUtils {
 
     public static void main(String[] args) {
         try {
-            String enc = aesEncrypt("6");
+            String enc = aesEncrypt("123");
             System.out.println(enc);
             System.out.println(aesDecrypt(enc));
         } catch (Exception e) {

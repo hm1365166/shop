@@ -14,7 +14,6 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * 日期工具类
- * Created by yangbin on 2017/6/12.
  */
 public class DateUtils {
     public static final Timestamp ZERO_TIMESTAMP = new Timestamp(0);
@@ -28,12 +27,6 @@ public class DateUtils {
     /**
      * 日期字符串转日期格式
      *
-     * @author jiangmy
-     * @date 2016-08-04 14:31:05
-     * @since v1.0.0
-     * @param str 日期字符串
-     * @param pattern 日期字符串格式
-     * @return java.util.Date格式
      */
     public static Date str2Date(String str, String pattern) {
         Date date = null;
@@ -77,11 +70,6 @@ public class DateUtils {
     /**
      * 默认yyyy-MM-dd格式字符串转日期
      *
-     * @author jiangmy
-     * @date 2016-08-04 14:33:01
-     * @since v1.0.0
-     * @param str 字符串(格式yyyy-MM-dd)
-     * @return java.util.Date格式
      */
     public static Date str2Date(String str) {
         return str2Date(str, FORMAT_DATE);
@@ -90,11 +78,6 @@ public class DateUtils {
     /**
      * 默认yyyy-MM-dd HH:mm:ss格式字符串转日期
      *
-     * @author jiangmy
-     * @date 2016-08-04 14:33:41
-     * @since v1.0.0
-     * @param str 字符串(格式yyyy-MM-dd HH:mm:ss)
-     * @return java.util.Date格式
      */
     public static Date str2DateTime(String str) {
         return str2Date(str, FORMAT_DATETIME);
@@ -103,11 +86,6 @@ public class DateUtils {
     /**
      * 默认yyyy-MM-dd HH:mm:ss格式字符串转时间戳
      *
-     * @author jiangmy
-     * @date 2016-08-04 14:36:42
-     * @since v1.0.0
-     * @param str 字符串(格式yyyy-MM-dd HH:mm:ss)
-     * @return java.sql.Timestamp格式
      */
     public static Timestamp str2Timestamp(String str) {
         Timestamp rs = null;
@@ -125,11 +103,6 @@ public class DateUtils {
     /**
      * java.util.Date格式 转 java.sql.Timestamp格式
      *
-     * @author jiangmy
-     * @date 2016-08-04 14:37:18
-     * @since v1.0.0
-     * @param date
-     * @return java.sql.Timestamp格式
      */
     public static Timestamp toTimestamp(Date date) {
         return new Timestamp(date.getTime());
@@ -137,13 +110,6 @@ public class DateUtils {
 
     /**
      * 日期转字符串
-     *
-     * @author jiangmy
-     * @date 2016-08-04 14:38:06
-     * @since v1.0.0
-     * @param date java.util.Date格式
-     * @param pattern 目标字符串格式
-     * @return String
      */
     public static String date2Str(Date date, String pattern) {
         if (date == null) {
@@ -161,12 +127,6 @@ public class DateUtils {
 
     /**
      * 日期时间转字符串
-     *
-     * @author jiangmy
-     * @date 2016-08-04 14:43:57
-     * @since v1.0.0
-     * @param dt java.util.Date格式
-     * @return String(yyyy-MM-dd HH:mm:ss)
      */
     public static String datetime2Str2(Date dt) {
         String tmstr = String.format("%1$tY-%1$tm-%1$td %1$tH:%1$tM:%1$tS", dt);
@@ -176,11 +136,6 @@ public class DateUtils {
     /**
      * 日期转字符串
      *
-     * @author jiangmy
-     * @date 2016-08-04 14:44:41
-     * @since v1.0.0
-     * @param date java.util.Date格式
-     * @return String(yyyy-MM-dd)
      */
     public static String date2Str(Date date) {
         return date2Str(date, FORMAT_DATE);
@@ -193,11 +148,6 @@ public class DateUtils {
     /**
      * 日期时间转字符串
      *
-     * @author jiangmy
-     * @date 2016-08-04 14:45:08
-     * @since v1.0.0
-     * @param date java.util.Date格式
-     * @return String(yyyy-MM-dd HH:mm:ss)
      */
     public static String datetime2Str(Date date) {
         return date2Str(date, FORMAT_DATETIME);
@@ -206,10 +156,6 @@ public class DateUtils {
     /**
      * 获取服务器当前系统时间
      *
-     * @author jiangmy
-     * @date 2016-08-04 14:45:08
-     * @since v1.0.0
-     * @return String(yyyy-MM-dd HH:mm:ss)
      */
     public static String getCurrentDateTime() {
         return date2Str(new Date(), FORMAT_DATETIME);
@@ -217,11 +163,6 @@ public class DateUtils {
 
     /**
      * 获取服务器当前系统时间(格式FORMAT_YYYYMMDDHHMMSS)
-     *
-     * @author xiemh
-     * @date 2016-08-04 14:45:08
-     * @since v1.0.0
-     * @return String(yyyy-MM-dd HH:mm:ss)
      */
     public static String getCurrentDateTimeNum() {
         return date2Str(new Date(), FORMAT_YYYYMMDDHHMMSS);
@@ -234,10 +175,6 @@ public class DateUtils {
     /**
      * 获取当前年份
      *
-     * @author buyi
-     * @date 2016-12-28 16:28:26
-     * @since v1.0.0
-     * @return int(yyyy)
      */
     public static int getCurrentYear() {
         return Calendar.getInstance().get(Calendar.YEAR);
@@ -246,10 +183,6 @@ public class DateUtils {
     /**
      * 当前时间戳
      *
-     * @author jiangmy
-     * @date 2016-08-04 14:48:04
-     * @since v1.0.0
-     * @return java.sql.Timestamp (yyyy-MM-dd HH:mm:ss)
      */
     public static Timestamp now() {
         return new Timestamp(System.currentTimeMillis());
@@ -258,10 +191,6 @@ public class DateUtils {
     /**
      * 当前日期0点的时间戳
      *
-     * @author jiangmy
-     * @date 2016-08-04 14:50:06
-     * @since v1.0.0
-     * @return java.sql.Timestamp (yyyy-MM-dd 00:00:00)
      */
     public static Timestamp nowDay() {
         return toTimestamp(today());
@@ -269,11 +198,6 @@ public class DateUtils {
 
     /**
      * 当前日期0点的Date
-     *
-     * @author jiangmy
-     * @date 2016-08-04 14:50:48
-     * @since v1.0.0
-     * @return java.util.Date (yyyy-MM-dd 00:00:00)
      */
     public static Date today() {
         return formatDate(new Date(), FORMAT_DATE);
@@ -282,11 +206,6 @@ public class DateUtils {
     /**
      * 格式化日期(去掉时间)
      *
-     * @author jiangmy
-     * @date 2016-08-04 14:51:15
-     * @since v1.0.0
-     * @param date
-     * @return java.util.Date (yyyy-MM-dd 00:00:00)
      */
     public static Date formatDate(Date date) {
         return formatDate(date, FORMAT_DATE);
@@ -295,11 +214,6 @@ public class DateUtils {
     /**
      * 格式化时间戳(去掉时间)
      *
-     * @author jiangmy
-     * @date 2016-08-04 14:51:49
-     * @since v1.0.0
-     * @param date
-     * @return java.sql.Timestamp (yyyy-MM-dd 00:00:00)
      */
     public static Timestamp formatDate(Timestamp date) {
         return toTimestamp(formatDate(date, FORMAT_DATE));
@@ -308,12 +222,6 @@ public class DateUtils {
     /**
      * 格式化日期
      *
-     * @author jiangmy
-     * @date 2016-08-04 14:57:02
-     * @since v1.0.0
-     * @param date 日期
-     * @param pattern 格式
-     * @return java.util.Date
      */
     public static Date formatDate(Date date, String pattern) {
         try {
@@ -348,15 +256,6 @@ public class DateUtils {
 
     /**
      * 设置时分秒
-     *
-     * @author buyi
-     * @date 2017-04-20 17:23:39
-     * @since v1.0.0
-     * @param date
-     * @param hour
-     * @param minute
-     * @param second
-     * @return
      */
     public static Date set(Date date, int hour, int minute, int second) {
         try {
@@ -425,11 +324,6 @@ public class DateUtils {
     /**
      * 获取date所在月的第一天0点
      *
-     * @author jiangmy
-     * @date 2016-08-04 15:00:02
-     * @since v1.0.0
-     * @param date
-     * @return
      */
     public static Date getMonthHead(Date date) {
         return formatDate(date, "yyyy-MM-01");
@@ -438,12 +332,6 @@ public class DateUtils {
     /**
      * 获取date所在月的最后一天23:59:59
      *
-     * @author jiangmy
-     * @date 2016-08-04 15:00:52
-     * @since v1.0.0
-     * @param date
-     * @param pattern
-     * @return
      */
     public static Date getMonthTail(Date date, String pattern) {
         return formatDate(addSecond(addMonth(getMonthHead(date), 1), -1), pattern);
@@ -459,10 +347,6 @@ public class DateUtils {
     /**
      * date1 - date2的时间差(舍弃小数部分,取整)
      *
-     * @param date1
-     * @param date2
-     * @param unit
-     * @return
      */
     public static long getTimeDiff(Date date1, Date date2, TimeUnit unit) {
         if (date1 == null || date2 == null) {
@@ -485,21 +369,12 @@ public class DateUtils {
     /**
      * 时间戳毫秒转字符串(yyyy-MM-dd HH:mm:ss)
      *
-     * @author jiangmy
-     * @date 2016-08-04 15:01:53
-     * @since v1.0.0
-     * @param t
-     * @return
      */
     public static String milli2str(long t) {
         return DateUtils.datetime2Str(new Date(t));
     }
 
     /**
-     * @author jiangmy
-     * @date 2016-12-08 13:20:02
-     * @param date
-     * @return
      */
     public static Date lastSecondOfDay(Date date) {
         return DateUtils.add(DateUtils.formatDate(date), 0, 0, 1, 0, 0, -1);
@@ -522,11 +397,6 @@ public class DateUtils {
     }
 
     /**
-     * @author jiangmy
-     * @date 2017-04-25 10:27:33
-     * @since v1.0.0
-     * @param date
-     * @return
      */
     public static int getMonthDayCount(Date date) {
         Calendar calendar = Calendar.getInstance();
@@ -536,12 +406,6 @@ public class DateUtils {
 
     /**
      * 求指定日期距离今天的天数
-     *
-     * @author qinqz
-     * @date 2017-05-09 19:09:37
-     * @since v1.0.0
-     * @param endDate
-     * @return
      */
     public static long getDayLeft(Date endDate) {
         long timeLeft = 0L;
@@ -558,11 +422,6 @@ public class DateUtils {
     /**
      * 求指定日期距离今天的剩余的时间(倒计时)
      *
-     * @author qinqz
-     * @date 2017-05-09 19:09:37
-     * @since v1.0.0
-     * @param endDate
-     * @return
      */
     public static String getTimeLeft(Date endDate) {
         String timeLeft = "";

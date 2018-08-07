@@ -34,13 +34,6 @@ import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
-/**
- * TODO(这里用一句话描述这个类或接口的作用)
- *
- * @author jiangmy
- * @date 2016-08-08 15:23:31
- * @since v1.0.0
- */
 public class JacksonUtil {
 	private static final Logger logger = LoggerFactory.getLogger(JacksonUtil.class);
 	// 转换全部字段
@@ -318,7 +311,7 @@ public class JacksonUtil {
 	 * json string convert to xml string
 	 */
 	public static String json2Xml(String jsonStr) {
-			try {
+		try {
 			JsonNode root = JacksonUtil.normalMapper.mapper.readTree(jsonStr);
 			String xml = JacksonUtil.xmlMapper.writeValueAsString(root);
 			return xml;

@@ -14,12 +14,15 @@ public class MybatisGen {
 		List<String> warnings = new ArrayList<String>();
 		boolean overwrite = true;
 		//项目根路径不要有中文,我的有中文,所以使用绝对路径
-		File configFile = new File("D:\\shop\\spfront\\src\\main\\resources\\genreatorConfig.xml");
+		//G:\workspace\git workspace\shop\spfront\src\main\resources
+		String pathname = "G:\\workspace\\git workspace\\shop\\spfront\\src\\main\\resources\\genreatorConfig.xml";
+		File configFile = new File(pathname);
 		ConfigurationParser cp = new ConfigurationParser(warnings);
 		Configuration config = cp.parseConfiguration(configFile);
 		DefaultShellCallback callback = new DefaultShellCallback(overwrite);
 		MyBatisGenerator myBatisGenerator = new MyBatisGenerator(config, callback, warnings);
 		myBatisGenerator.generate(null);
+		System.exit(0);
 	}
 
 	public static void main(String[] args) {
